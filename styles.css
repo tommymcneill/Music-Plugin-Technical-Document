@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  font-family: 'arial';
+  min-height: 100vh;
+  color: #4d4e53;
+  line-height: 1.5;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: black;
+  font-size: 1.8em;
+  font-weight: thin;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-family: 'arial';
+  
+
+}
+
+h1 {
+  color: black;
+  font-size: 1.8em;
+  font-weight: normal;
+  margin-top: 15px;
+  font-family: 'arial';
+  padding-bottom: 20px;
+}
+
+
+
+#navbar {
+  width: 25%;
+  border-bottom: 1px solid;
+  border-right: 3px solid grey
+ 
+}
+
+#ul-navbar li {
+
+border-top: 1px solid black;
+padding-top: 15px;
+padding-right: 15px;
+padding-bottom: 15px;
+list-style: none;
+margin-left: 20px;
+transition: text-indent 0.3s ease-in-out;
+}
+
+#ul-navbar a {
+  text-decoration: none;
+  color: black;
+ 
+}
+
+#ul-navbar li:hover {
+
+  font-weight: 500;
+  text-indent: 5px;
+  
+
+
+}
+#main-doc{
+  width: 75%;
+  height: 100vh; 
+  margin-left: 60px;
+  margin-top: 25px;
+}
+
+p {
+  margin-top: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+li {
+  margin-left: 20px;
+}
+#nav-link {
+  margin-left: -20px;
+}
+
+code {
+  background-color: #f7f7f7;
+  display: block;
+  padding: 15px;
+  text-align: left;
+  width: 70%;
+  radius: 5px;}
+
+
+  @media only screen and (min-width: 815px) {
+    body {
+      flex-direction: row;
+    }
+    #navbar {
+      width: 300px;
+      position: fixed;
+      height: 100%;
+    }
+
+    #main-doc {
+      margin: 0 20px;
+      margin-left: 350px;
+      
+    }
+
+
+  }
+
+ @media only screen and (max-width: 815px) {
+    body {
+      flex-direction: column;
+    }
+
+    #navbar {
+      width: 100%;
+      height: 100%;
+    }
+    
+  }
